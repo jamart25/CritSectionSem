@@ -1,0 +1,845 @@
+Script started on 2023-02-16 19:03:49+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="134" LINES="27"]
+[?2004h]0;prpa@prpa: ~[01;32mprpa@prpa[00m:[01;34m~[00m$ git clone [7mhttps://github.com/jamart25/CritSectionSem.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/jamart25/CritSectionSem.git
+[?2004lCloning into 'CritSectionSem'...
+warning: You appear to have cloned an empty repository.
+[?2004h]0;prpa@prpa: ~[01;32mprpa@prpa[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mCritSectionSem[0m  decker_02.txt  [01;34mDekkerprpa[0m  [01;34mDescargas[0m  [01;34mDesktop[0m  [01;34mDocumentos[0m  [01;34mImágenes[0m  [01;34mMúsica[0m  [01;34mPlantillas[0m  [01;34mprpa[0m  [01;34mPúblico[0m  [01;34msnap[0m  [01;34mVídeos[0m
+[?2004h]0;prpa@prpa: ~[01;32mprpa@prpa[00m:[01;34m~[00m$ cd c[KCritSectionSe[K[K[K[K[K[K[K[K[K[K[K[K[KDescargas
+[?2004l[?2004h]0;prpa@prpa: ~/Descargas[01;32mprpa@prpa[00m:[01;34m~/Descargas[00m$ ls
+[?2004lBoundedSemaphore.py  decker.pdf  [0m[01;34mdekker[0m  [01;31mexclusion_mutua.tgz[0m  lock.py  multiprocessing_01.txt  [01;34mnueva_carpeta[0m  semaphore.txt
+[?2004h]0;prpa@prpa: ~/Descargas[01;32mprpa@prpa[00m:[01;34m~/Descargas[00m$ cp[K[Kcd ..
+[?2004l[?2004h]0;prpa@prpa: ~[01;32mprpa@prpa[00m:[01;34m~[00m$ cp Descargas/*py[K[K.py CritSectionSem 
+[?2004l[?2004h]0;prpa@prpa: ~[01;32mprpa@prpa[00m:[01;34m~[00m$ ç[Kls[K[Kcd CritSectionSem
+[?2004l[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ ls
+[?2004lBoundedSemaphore.py  lock.py
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ git add .
+[?2004l[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ git commit -m "P[K1.0"
+[?2004l[main (root-commit) 90c5422] 1.0
+ 2 files changed, 93 insertions(+)
+ create mode 100644 BoundedSemaphore.py
+ create mode 100644 lock.py
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ git push
+[?2004lUsername for 'https://github.com': ^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B                                                jamart25@ucm.es
+Password for 'https://jamart25@ucm.es@github.com': 
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 813 bytes | 813.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/jamart25/CritSectionSem.git
+ * [new branch]      main -> main
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ python3 lock.py
+[?2004lValor inicial del contador 0
+1−0: Non−critical Section
+4−0: Non−critical Section
+2−0: Non−critical Section
+3−0: Non−critical Section
+5−0: Non−critical Section
+0−0: Non−critical Section
+6−0: Non−critical Section
+7−0: Non−critical Section
+5−0: End of non−critical Section
+5−0: Critical section
+5−0: Inside critical section
+5−0: End of critical section
+5−1: Non−critical Section
+0−0: End of non−critical Section
+0−0: Critical section
+0−0: Inside critical section
+0−0: End of critical section
+0−1: Non−critical Section
+1−0: End of non−critical Section
+1−0: Critical section
+1−0: Inside critical section
+1−0: End of critical section
+1−1: Non−critical Section
+4−0: End of non−critical Section
+4−0: Critical section
+4−0: Inside critical section
+4−0: End of critical section
+4−1: Non−critical Section
+3−0: End of non−critical Section
+3−0: Critical section
+3−0: Inside critical section
+3−0: End of critical section
+3−1: Non−critical Section
+2−0: End of non−critical Section
+2−0: Critical section
+2−0: Inside critical section
+2−0: End of critical section
+2−1: Non−critical Section
+5−1: End of non−critical Section
+5−1: Critical section
+5−1: Inside critical section
+5−1: End of critical section
+5−2: Non−critical Section
+7−0: End of non−critical Section
+7−0: Critical section
+7−0: Inside critical section
+7−0: End of critical section
+7−1: Non−critical Section
+0−1: End of non−critical Section
+0−1: Critical section
+0−1: Inside critical section
+0−1: End of critical section
+0−2: Non−critical Section
+5−2: End of non−critical Section
+5−2: Critical section
+5−2: Inside critical section
+5−2: End of critical section
+5−3: Non−critical Section
+4−1: End of non−critical Section
+4−1: Critical section
+4−1: Inside critical section
+4−1: End of critical section
+4−2: Non−critical Section
+2−1: End of non−critical Section
+2−1: Critical section
+2−1: Inside critical section
+2−1: End of critical section
+2−2: Non−critical Section
+1−1: End of non−critical Section
+1−1: Critical section
+1−1: Inside critical section
+1−1: End of critical section
+1−2: Non−critical Section
+6−0: End of non−critical Section
+6−0: Critical section
+6−0: Inside critical section
+6−0: End of critical section
+6−1: Non−critical Section
+0−2: End of non−critical Section
+0−2: Critical section
+0−2: Inside critical section
+0−2: End of critical section
+0−3: Non−critical Section
+4−2: End of non−critical Section
+4−2: Critical section
+4−2: Inside critical section
+4−2: End of critical section
+4−3: Non−critical Section
+3−1: End of non−critical Section
+3−1: Critical section
+3−1: Inside critical section
+3−1: End of critical section
+3−2: Non−critical Section
+3−2: End of non−critical Section
+3−2: Critical section
+3−2: Inside critical section
+3−2: End of critical section
+3−3: Non−critical Section
+2−2: End of non−critical Section
+2−2: Critical section
+2−2: Inside critical section
+2−2: End of critical section
+2−3: Non−critical Section
+6−1: End of non−critical Section
+6−1: Critical section
+6−1: Inside critical section
+6−1: End of critical section
+6−2: Non−critical Section
+7−1: End of non−critical Section
+7−1: Critical section
+7−1: Inside critical section
+7−1: End of critical section
+7−2: Non−critical Section
+4−3: End of non−critical Section
+4−3: Critical section
+4−3: Inside critical section
+4−3: End of critical section
+4−4: Non−critical Section
+5−3: End of non−critical Section
+5−3: Critical section
+5−3: Inside critical section
+5−3: End of critical section
+5−4: Non−critical Section
+3−3: End of non−critical Section
+3−3: Critical section
+3−3: Inside critical section
+3−3: End of critical section
+3−4: Non−critical Section
+5−4: End of non−critical Section
+5−4: Critical section
+5−4: Inside critical section
+5−4: End of critical section
+5−5: Non−critical Section
+3−4: End of non−critical Section
+3−4: Critical section
+3−4: Inside critical section
+3−4: End of critical section
+3−5: Non−critical Section
+1−2: End of non−critical Section
+1−2: Critical section
+1−2: Inside critical section
+1−2: End of critical section
+1−3: Non−critical Section
+7−2: End of non−critical Section
+7−2: Critical section
+7−2: Inside critical section
+7−2: End of critical section
+7−3: Non−critical Section
+7−3: End of non−critical Section
+7−3: Critical section
+7−3: Inside critical section
+7−3: End of critical section
+7−4: Non−critical Section
+0−3: End of non−critical Section
+0−3: Critical section
+0−3: Inside critical section
+0−3: End of critical section
+0−4: Non−critical Section
+6−2: End of non−critical Section
+6−2: Critical section
+6−2: Inside critical section
+6−2: End of critical section
+6−3: Non−critical Section
+2−3: End of non−critical Section
+2−3: Critical section
+2−3: Inside critical section
+2−3: End of critical section
+2−4: Non−critical Section
+7−4: End of non−critical Section
+7−4: Critical section
+7−4: Inside critical section
+7−4: End of critical section
+7−5: Non−critical Section
+7−5: End of non−critical Section
+7−5: Critical section
+7−5: Inside critical section
+7−5: End of critical section
+7−6: Non−critical Section
+1−3: End of non−critical Section
+1−3: Critical section
+1−3: Inside critical section
+1−3: End of critical section
+1−4: Non−critical Section
+0−4: End of non−critical Section
+0−4: Critical section
+0−4: Inside critical section
+0−4: End of critical section
+0−5: Non−critical Section
+4−4: End of non−critical Section
+4−4: Critical section
+4−4: Inside critical section
+4−4: End of critical section
+4−5: Non−critical Section
+3−5: End of non−critical Section
+3−5: Critical section
+3−5: Inside critical section
+3−5: End of critical section
+3−6: Non−critical Section
+5−5: End of non−critical Section
+5−5: Critical section
+5−5: Inside critical section
+5−5: End of critical section
+5−6: Non−critical Section
+5−6: End of non−critical Section
+5−6: Critical section
+5−6: Inside critical section
+5−6: End of critical section
+5−7: Non−critical Section
+6−3: End of non−critical Section
+6−3: Critical section
+6−3: Inside critical section
+6−3: End of critical section
+6−4: Non−critical Section
+4−5: End of non−critical Section
+4−5: Critical section
+4−5: Inside critical section
+4−5: End of critical section
+4−6: Non−critical Section
+3−6: End of non−critical Section
+3−6: Critical section
+3−6: Inside critical section
+3−6: End of critical section
+3−7: Non−critical Section
+6−4: End of non−critical Section
+6−4: Critical section
+6−4: Inside critical section
+6−4: End of critical section
+6−5: Non−critical Section
+2−4: End of non−critical Section
+2−4: Critical section
+2−4: Inside critical section
+2−4: End of critical section
+2−5: Non−critical Section
+1−4: End of non−critical Section
+1−4: Critical section
+1−4: Inside critical section
+1−4: End of critical section
+1−5: Non−critical Section
+0−5: End of non−critical Section
+0−5: Critical section
+0−5: Inside critical section
+0−5: End of critical section
+0−6: Non−critical Section
+3−7: End of non−critical Section
+3−7: Critical section
+3−7: Inside critical section
+3−7: End of critical section
+3−8: Non−critical Section
+3−8: End of non−critical Section
+3−8: Critical section
+3−8: Inside critical section
+3−8: End of critical section
+3−9: Non−critical Section
+1−5: End of non−critical Section
+1−5: Critical section
+1−5: Inside critical section
+1−5: End of critical section
+1−6: Non−critical Section
+7−6: End of non−critical Section
+7−6: Critical section
+7−6: Inside critical section
+7−6: End of critical section
+7−7: Non−critical Section
+5−7: End of non−critical Section
+5−7: Critical section
+5−7: Inside critical section
+5−7: End of critical section
+5−8: Non−critical Section
+3−9: End of non−critical Section
+3−9: Critical section
+3−9: Inside critical section
+3−9: End of critical section
+1−6: End of non−critical Section
+1−6: Critical section
+1−6: Inside critical section
+1−6: End of critical section
+1−7: Non−critical Section
+6−5: End of non−critical Section
+6−5: Critical section
+6−5: Inside critical section
+6−5: End of critical section
+6−6: Non−critical Section
+0−6: End of non−critical Section
+0−6: Critical section
+0−6: Inside critical section
+0−6: End of critical section
+0−7: Non−critical Section
+7−7: End of non−critical Section
+7−7: Critical section
+7−7: Inside critical section
+7−7: End of critical section
+7−8: Non−critical Section
+1−7: End of non−critical Section
+1−7: Critical section
+1−7: Inside critical section
+1−7: End of critical section
+1−8: Non−critical Section
+5−8: End of non−critical Section
+5−8: Critical section
+5−8: Inside critical section
+5−8: End of critical section
+5−9: Non−critical Section
+4−6: End of non−critical Section
+4−6: Critical section
+4−6: Inside critical section
+4−6: End of critical section
+4−7: Non−critical Section
+5−9: End of non−critical Section
+5−9: Critical section
+5−9: Inside critical section
+5−9: End of critical section
+2−5: End of non−critical Section
+2−5: Critical section
+2−5: Inside critical section
+2−5: End of critical section
+2−6: Non−critical Section
+7−8: End of non−critical Section
+7−8: Critical section
+7−8: Inside critical section
+7−8: End of critical section
+7−9: Non−critical Section
+1−8: End of non−critical Section
+1−8: Critical section
+1−8: Inside critical section
+1−8: End of critical section
+1−9: Non−critical Section
+6−6: End of non−critical Section
+6−6: Critical section
+6−6: Inside critical section
+6−6: End of critical section
+6−7: Non−critical Section
+0−7: End of non−critical Section
+0−7: Critical section
+0−7: Inside critical section
+0−7: End of critical section
+0−8: Non−critical Section
+4−7: End of non−critical Section
+4−7: Critical section
+4−7: Inside critical section
+4−7: End of critical section
+4−8: Non−critical Section
+0−8: End of non−critical Section
+0−8: Critical section
+0−8: Inside critical section
+0−8: End of critical section
+0−9: Non−critical Section
+7−9: End of non−critical Section
+7−9: Critical section
+7−9: Inside critical section
+7−9: End of critical section
+1−9: End of non−critical Section
+1−9: Critical section
+1−9: Inside critical section
+1−9: End of critical section
+4−8: End of non−critical Section
+4−8: Critical section
+4−8: Inside critical section
+4−8: End of critical section
+4−9: Non−critical Section
+6−7: End of non−critical Section
+6−7: Critical section
+6−7: Inside critical section
+6−7: End of critical section
+6−8: Non−critical Section
+2−6: End of non−critical Section
+2−6: Critical section
+2−6: Inside critical section
+2−6: End of critical section
+2−7: Non−critical Section
+6−8: End of non−critical Section
+6−8: Critical section
+6−8: Inside critical section
+6−8: End of critical section
+6−9: Non−critical Section
+4−9: End of non−critical Section
+4−9: Critical section
+4−9: Inside critical section
+4−9: End of critical section
+2−7: End of non−critical Section
+2−7: Critical section
+2−7: Inside critical section
+2−7: End of critical section
+2−8: Non−critical Section
+0−9: End of non−critical Section
+0−9: Critical section
+0−9: Inside critical section
+0−9: End of critical section
+6−9: End of non−critical Section
+6−9: Critical section
+6−9: Inside critical section
+6−9: End of critical section
+2−8: End of non−critical Section
+2−8: Critical section
+2−8: Inside critical section
+2−8: End of critical section
+2−9: Non−critical Section
+2−9: End of non−critical Section
+2−9: Critical section
+2−9: Inside critical section
+2−9: End of critical section
+Valor final del contador 80
+fin
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ python[K[K[K[K[K[Kls
+[?2004lBoundedSemaphore.py  lock.py
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ python3 BoundedSemaphore.py
+[?2004lValor inicial del contador 0
+1−0: Non−critical Section
+0−0: Non−critical Section
+3−0: Non−critical Section
+7−0: Non−critical Section
+5−0: Non−critical Section
+2−0: Non−critical Section
+4−0: Non−critical Section
+6−0: Non−critical Section
+4−0: End of non−critical Section
+4−0: Critical section
+6−0: End of non−critical Section
+2−0: End of non−critical Section
+5−0: End of non−critical Section
+1−0: End of non−critical Section
+7−0: End of non−critical Section
+4−0: Inside critical section
+4−0: End of critical section
+4−1: Non−critical Section
+6−0: Critical section
+3−0: End of non−critical Section
+6−0: Inside critical section
+6−0: End of critical section
+2−0: Critical section
+6−1: Non−critical Section
+0−0: End of non−critical Section
+4−1: End of non−critical Section
+2−0: Inside critical section
+2−0: End of critical section
+2−1: Non−critical Section
+5−0: Critical section
+5−0: Inside critical section
+5−0: End of critical section
+1−0: Critical section
+5−1: Non−critical Section
+6−1: End of non−critical Section
+5−1: End of non−critical Section
+1−0: Inside critical section
+1−0: End of critical section
+1−1: Non−critical Section
+7−0: Critical section
+2−1: End of non−critical Section
+7−0: Inside critical section
+7−0: End of critical section
+3−0: Critical section
+7−1: Non−critical Section
+1−1: End of non−critical Section
+3−0: Inside critical section
+3−0: End of critical section
+0−0: Critical section
+3−1: Non−critical Section
+0−0: Inside critical section
+0−0: End of critical section
+0−1: Non−critical Section
+4−1: Critical section
+7−1: End of non−critical Section
+3−1: End of non−critical Section
+0−1: End of non−critical Section
+4−1: Inside critical section
+4−1: End of critical section
+4−2: Non−critical Section
+6−1: Critical section
+4−2: End of non−critical Section
+6−1: Inside critical section
+6−1: End of critical section
+6−2: Non−critical Section
+5−1: Critical section
+5−1: Inside critical section
+5−1: End of critical section
+2−1: Critical section
+5−2: Non−critical Section
+6−2: End of non−critical Section
+2−1: Inside critical section
+2−1: End of critical section
+2−2: Non−critical Section
+1−1: Critical section
+5−2: End of non−critical Section
+2−2: End of non−critical Section
+1−1: Inside critical section
+1−1: End of critical section
+1−2: Non−critical Section
+7−1: Critical section
+1−2: End of non−critical Section
+7−1: Inside critical section
+7−1: End of critical section
+3−1: Critical section
+7−2: Non−critical Section
+3−1: Inside critical section
+3−1: End of critical section
+3−2: Non−critical Section
+0−1: Critical section
+7−2: End of non−critical Section
+3−2: End of non−critical Section
+0−1: Inside critical section
+0−1: End of critical section
+0−2: Non−critical Section
+4−2: Critical section
+0−2: End of non−critical Section
+4−2: Inside critical section
+4−2: End of critical section
+4−3: Non−critical Section
+6−2: Critical section
+6−2: Inside critical section
+6−2: End of critical section
+6−3: Non−critical Section
+5−2: Critical section
+5−2: Inside critical section
+5−2: End of critical section
+2−2: Critical section
+5−3: Non−critical Section
+4−3: End of non−critical Section
+6−3: End of non−critical Section
+5−3: End of non−critical Section
+2−2: Inside critical section
+2−2: End of critical section
+1−2: Critical section
+2−3: Non−critical Section
+2−3: End of non−critical Section
+1−2: Inside critical section
+1−2: End of critical section
+1−3: Non−critical Section
+7−2: Critical section
+1−3: End of non−critical Section
+7−2: Inside critical section
+7−2: End of critical section
+3−2: Critical section
+7−3: Non−critical Section
+7−3: End of non−critical Section
+3−2: Inside critical section
+3−2: End of critical section
+0−2: Critical section
+3−3: Non−critical Section
+3−3: End of non−critical Section
+0−2: Inside critical section
+0−2: End of critical section
+0−3: Non−critical Section
+4−3: Critical section
+0−3: End of non−critical Section
+4−3: Inside critical section
+4−3: End of critical section
+4−4: Non−critical Section
+6−3: Critical section
+6−3: Inside critical section
+6−3: End of critical section
+6−4: Non−critical Section
+5−3: Critical section
+5−3: Inside critical section
+5−3: End of critical section
+2−3: Critical section
+5−4: Non−critical Section
+6−4: End of non−critical Section
+2−3: Inside critical section
+2−3: End of critical section
+1−3: Critical section
+2−4: Non−critical Section
+4−4: End of non−critical Section
+5−4: End of non−critical Section
+1−3: Inside critical section
+1−3: End of critical section
+1−4: Non−critical Section
+7−3: Critical section
+2−4: End of non−critical Section
+1−4: End of non−critical Section
+7−3: Inside critical section
+7−3: End of critical section
+3−3: Critical section
+7−4: Non−critical Section
+7−4: End of non−critical Section
+3−3: Inside critical section
+3−3: End of critical section
+3−4: Non−critical Section
+0−3: Critical section
+3−4: End of non−critical Section
+0−3: Inside critical section
+0−3: End of critical section
+0−4: Non−critical Section
+6−4: Critical section
+6−4: Inside critical section
+6−4: End of critical section
+4−4: Critical section
+6−5: Non−critical Section
+0−4: End of non−critical Section
+4−4: Inside critical section
+4−4: End of critical section
+4−5: Non−critical Section
+5−4: Critical section
+4−5: End of non−critical Section
+6−5: End of non−critical Section
+5−4: Inside critical section
+5−4: End of critical section
+2−4: Critical section
+5−5: Non−critical Section
+2−4: Inside critical section
+2−4: End of critical section
+1−4: Critical section
+2−5: Non−critical Section
+5−5: End of non−critical Section
+1−4: Inside critical section
+1−4: End of critical section
+1−5: Non−critical Section
+7−4: Critical section
+7−4: Inside critical section
+7−4: End of critical section
+3−4: Critical section
+7−5: Non−critical Section
+3−4: Inside critical section
+3−4: End of critical section
+0−4: Critical section
+3−5: Non−critical Section
+2−5: End of non−critical Section
+7−5: End of non−critical Section
+1−5: End of non−critical Section
+3−5: End of non−critical Section
+0−4: Inside critical section
+0−4: End of critical section
+0−5: Non−critical Section
+4−5: Critical section
+4−5: Inside critical section
+4−5: End of critical section
+4−6: Non−critical Section
+6−5: Critical section
+4−6: End of non−critical Section
+6−5: Inside critical section
+6−5: End of critical section
+6−6: Non−critical Section
+5−5: Critical section
+0−5: End of non−critical Section
+5−5: Inside critical section
+5−5: End of critical section
+2−5: Critical section
+5−6: Non−critical Section
+5−6: End of non−critical Section
+2−5: Inside critical section
+2−5: End of critical section
+2−6: Non−critical Section
+7−5: Critical section
+2−6: End of non−critical Section
+6−6: End of non−critical Section
+7−5: Inside critical section
+7−5: End of critical section
+1−5: Critical section
+7−6: Non−critical Section
+1−5: Inside critical section
+1−5: End of critical section
+1−6: Non−critical Section
+3−5: Critical section
+7−6: End of non−critical Section
+1−6: End of non−critical Section
+3−5: Inside critical section
+3−5: End of critical section
+3−6: Non−critical Section
+4−6: Critical section
+3−6: End of non−critical Section
+4−6: Inside critical section
+4−6: End of critical section
+0−5: Critical section
+4−7: Non−critical Section
+0−5: Inside critical section
+0−5: End of critical section
+0−6: Non−critical Section
+5−6: Critical section
+0−6: End of non−critical Section
+5−6: Inside critical section
+5−6: End of critical section
+2−6: Critical section
+5−7: Non−critical Section
+5−7: End of non−critical Section
+4−7: End of non−critical Section
+2−6: Inside critical section
+2−6: End of critical section
+2−7: Non−critical Section
+6−6: Critical section
+2−7: End of non−critical Section
+6−6: Inside critical section
+6−6: End of critical section
+6−7: Non−critical Section
+7−6: Critical section
+7−6: Inside critical section
+7−6: End of critical section
+1−6: Critical section
+7−7: Non−critical Section
+1−6: Inside critical section
+1−6: End of critical section
+1−7: Non−critical Section
+3−6: Critical section
+1−7: End of non−critical Section
+6−7: End of non−critical Section
+3−6: Inside critical section
+3−6: End of critical section
+3−7: Non−critical Section
+0−6: Critical section
+7−7: End of non−critical Section
+3−7: End of non−critical Section
+0−6: Inside critical section
+0−6: End of critical section
+0−7: Non−critical Section
+5−7: Critical section
+5−7: Inside critical section
+5−7: End of critical section
+4−7: Critical section
+5−8: Non−critical Section
+4−7: Inside critical section
+4−7: End of critical section
+2−7: Critical section
+4−8: Non−critical Section
+0−7: End of non−critical Section
+2−7: Inside critical section
+2−7: End of critical section
+2−8: Non−critical Section
+1−7: Critical section
+5−8: End of non−critical Section
+4−8: End of non−critical Section
+1−7: Inside critical section
+1−7: End of critical section
+1−8: Non−critical Section
+6−7: Critical section
+2−8: End of non−critical Section
+1−8: End of non−critical Section
+6−7: Inside critical section
+6−7: End of critical section
+6−8: Non−critical Section
+7−7: Critical section
+7−7: Inside critical section
+7−7: End of critical section
+3−7: Critical section
+7−8: Non−critical Section
+7−8: End of non−critical Section
+6−8: End of non−critical Section
+3−7: Inside critical section
+3−7: End of critical section
+3−8: Non−critical Section
+0−7: Critical section
+3−8: End of non−critical Section
+0−7: Inside critical section
+0−7: End of critical section
+0−8: Non−critical Section
+5−8: Critical section
+0−8: End of non−critical Section
+5−8: Inside critical section
+5−8: End of critical section
+4−8: Critical section
+5−9: Non−critical Section
+5−9: End of non−critical Section
+4−8: Inside critical section
+4−8: End of critical section
+2−8: Critical section
+4−9: Non−critical Section
+2−8: Inside critical section
+2−8: End of critical section
+2−9: Non−critical Section
+1−8: Critical section
+2−9: End of non−critical Section
+4−9: End of non−critical Section
+1−8: Inside critical section
+1−8: End of critical section
+1−9: Non−critical Section
+7−8: Critical section
+7−8: Inside critical section
+7−8: End of critical section
+6−8: Critical section
+7−9: Non−critical Section
+1−9: End of non−critical Section
+6−8: Inside critical section
+6−8: End of critical section
+3−8: Critical section
+6−9: Non−critical Section
+6−9: End of non−critical Section
+3−8: Inside critical section
+3−8: End of critical section
+3−9: Non−critical Section
+0−8: Critical section
+7−9: End of non−critical Section
+3−9: End of non−critical Section
+0−8: Inside critical section
+0−8: End of critical section
+0−9: Non−critical Section
+5−9: Critical section
+5−9: Inside critical section
+5−9: End of critical section
+2−9: Critical section
+2−9: Inside critical section
+2−9: End of critical section
+4−9: Critical section
+0−9: End of non−critical Section
+4−9: Inside critical section
+4−9: End of critical section
+1−9: Critical section
+1−9: Inside critical section
+1−9: End of critical section
+6−9: Critical section
+6−9: Inside critical section
+6−9: End of critical section
+7−9: Critical section
+7−9: Inside critical section
+7−9: End of critical section
+3−9: Critical section
+3−9: Inside critical section
+3−9: End of critical section
+0−9: Critical section
+0−9: Inside critical section
+0−9: End of critical section
+Valor final del contador 80
+fin
+[?2004h]0;prpa@prpa: ~/CritSectionSem[01;32mprpa@prpa[00m:[01;34m~/CritSectionSem[00m$ [?2004l
+exit
+
+Script done on 2023-02-16 19:09:16+01:00 [COMMAND_EXIT_CODE="0"]
